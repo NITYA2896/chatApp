@@ -61,8 +61,7 @@ function Sidebar({ users, selectedChat, onSelectChat }) {
             ))}
             {users.length === 0 && (
               <div className="bg-gray-50 rounded-2xl p-6 text-center border-2 border-dashed border-gray-200 mt-2">
-                <span className="text-4xl block mb-2">🏜️</span>
-                <p className="text-gray-500 text-sm font-medium">Crickets... invite some friends!</p>
+                <p className="text-gray-500 text-sm font-medium mt-2">Crickets... invite some friends!</p>
               </div>
             )}
            </div>

@@ -34,7 +34,7 @@ function Login({ onLogin }) {
             ChatterBox 9000
           </h1>
           <p className="text-gray-500 mt-3 text-center font-medium">
-            Where productivity goes to take a nap. 😴
+            Where productivity goes to take a nap.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ function Login({ onLogin }) {
             className="w-full relative overflow-hidden group bg-gradient-to-r from-indigo-600 to-fuchsia-600 text-white font-bold py-4 px-6 rounded-xl hover:shadow-[0_0_40px_rgba(168,85,247,0.6)] focus:ring-4 focus:ring-purple-300 transition-all duration-300 hover:-translate-y-1"
           >
             <span className="relative z-10 flex items-center justify-center gap-2">
-              Beam Me In, Scotty! 🚀
+              Beam Me In, Scotty!
             </span>
           </button>
         </form>
