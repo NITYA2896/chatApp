@@ -1,9 +1,6 @@
 import { Users, Circle, Laugh } from 'lucide-react';
 
 function Sidebar({ users, selectedChat, onSelectChat }) {
-  // DiceBear Avatar utility
-  const getAvatar = (seed) => `https://api.dicebear.com/7.x/fun-emoji/svg?seed=${seed}`;
-
   return (
     <div className="w-84 bg-white/80 backdrop-blur-md border-r border-indigo-100 flex flex-col h-full shadow-2xl z-20">
       <div className="p-6 bg-gradient-to-r relative overflow-hidden flex items-center gap-3">
@@ -55,13 +52,10 @@ function Sidebar({ users, selectedChat, onSelectChat }) {
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <div className="relative">
-                    <img src={getAvatar(user.username)} alt={user.username} className="w-12 h-12 bg-indigo-50 rounded-full border-2 border-white shadow-sm" />
-                    <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-0.5 shadow-sm">
-                      <Circle className="w-3.5 h-3.5 text-green-500 fill-green-500" />
-                    </div>
+                  <div className="bg-white rounded-full p-0.5 shadow-sm">
+                    <Circle className="w-3.5 h-3.5 text-green-500 fill-green-500" />
                   </div>
-                  <span className={`font-bold ${selectedChat.id === user.id ? 'text-fuchsia-700' : 'text-gray-700'}`}>{user.username}</span>
+                  <span className={`font-bold truncate ${selectedChat.id === user.id ? 'text-fuchsia-700' : 'text-gray-700'}`}>{user.username}</span>
                 </div>
               </button>
             ))}
